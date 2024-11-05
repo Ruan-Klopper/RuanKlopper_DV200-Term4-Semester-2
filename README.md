@@ -22,7 +22,7 @@
 
 ## Links
 
-- [Heroku deployed](#open-brief-proposal)
+- [Heroku deployed](https://dotskin-247e187069ab.herokuapp.com/)
 - [2nd deployed link](#open-brief-proposal)
 - [Open Brief Proposal](https://docs.google.com/document/d/16o_eS07VHDec6fv7lfoIV01yaAwjUCk_HsKyzW5Sex4/edit?usp=sharing)
 - [Demonstration Video](https://drive.google.com/drive/folders/1B24YX5O7FDFCRvzQCZyzTL4M1kra34Yr?usp=sharing)
