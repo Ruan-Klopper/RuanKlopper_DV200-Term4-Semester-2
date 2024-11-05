@@ -24,9 +24,9 @@
 
 - [Heroku deployed](#open-brief-proposal)
 - [2nd deployed link](#open-brief-proposal)
-- [Open Brief Proposal](#https://docs.google.com/document/d/16o_eS07VHDec6fv7lfoIV01yaAwjUCk_HsKyzW5Sex4/edit?usp=sharing)
-- [Demonstration Video](#https://drive.google.com/drive/folders/1B24YX5O7FDFCRvzQCZyzTL4M1kra34Yr?usp=sharing)
-- [Milestone Check Document](#https://docs.google.com/document/d/12JlTmOh-4in_n_fYWj604rlMmup_pLxJphQPmto9dkE/edit?usp=sharing)
+- [Open Brief Proposal](https://docs.google.com/document/d/16o_eS07VHDec6fv7lfoIV01yaAwjUCk_HsKyzW5Sex4/edit?usp=sharing)
+- [Demonstration Video](https://drive.google.com/drive/folders/1B24YX5O7FDFCRvzQCZyzTL4M1kra34Yr?usp=sharing)
+- [Milestone Check Document](https://docs.google.com/document/d/12JlTmOh-4in_n_fYWj604rlMmup_pLxJphQPmto9dkE/edit?usp=sharing)
 
 ## Project Overview
 
