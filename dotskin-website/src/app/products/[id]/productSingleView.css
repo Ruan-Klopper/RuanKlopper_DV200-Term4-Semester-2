@@ -1,0 +1,178 @@
+.productSingleView {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #ffffff;
+  padding-bottom: 100px;
+}
+
+@media screen and (min-width: 1151px) {
+  .productSingleView {
+    padding-top: 140px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1150px) {
+  .productSingleView {
+    padding-top: 150px;
+  }
+}
+
+/* Small devices (sm) - screens ≤ 576px */
+@media (max-width: 576px) {
+  .PSVproductImage {
+    height: 300px;
+  }
+
+  .PSVproductTitle {
+    font-size: 48px;
+  }
+}
+
+/* Medium devices (md) - screens ≥ 577px and ≤ 768px */
+@media (min-width: 577px) and (max-width: 767px) {
+  .PSVproductImage {
+    height: 400px;
+  }
+
+  .PSVimageWrapper {
+    height: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .PSVproductTitle {
+    font-size: 64px;
+  }
+}
+
+/* Larger devices (lg) - screens ≥ 768px and ≤ 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .PSVproductImage {
+    height: 500px;
+  }
+
+  .PSVimageWrapper {
+    height: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .PSVproductTitle {
+    font-size: 64px;
+  }
+}
+
+/* Extra large devices (xl) - screens ≥ 992px */
+@media (min-width: 992px) {
+  .PSVproductImage {
+    height: 600px;
+  }
+
+  .PSVimageWrapper {
+    height: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .PSVproductTitle {
+    font-size: 64px;
+  }
+}
+
+.PSVsplitter {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.PSVproductImage {
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.PSVcontent {
+  max-width: 450px;
+  padding: 10px;
+}
+
+.PSVproductTitle {
+  font-family: var(--font-abhaya-libre), sans-serif;
+}
+
+.PSVorderBtnGroup {
+  display: flex;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 15px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.quantityBtn {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  font-size: 24px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.quantityBtn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.quantityBtn:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.quantityDisplay {
+  font-size: 18px;
+  width: 30px;
+  text-align: center;
+}
+
+.PSVAddToCartBTN {
+  background-color: black;
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PSVAddToCartBTN:hover {
+  background-color: rgb(80, 80, 80);
+  /* Expand, smooth animation */
+}
+
+.PSVatcContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 25px;
+}
+
+.PSVatcSplitter {
+  height: 100%;
+  width: 1px;
+  background-color: white;
+}

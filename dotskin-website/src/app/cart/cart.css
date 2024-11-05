@@ -1,0 +1,92 @@
+/* font-family: var(--font-abhaya-libre), sans-serif; */
+/* font-family: var(--font-inter), sans-serif; */
+
+@media screen and (min-width: 1151px) {
+  .cartPage {
+    padding-top: 150px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1150px) {
+  .cartPage {
+    padding-top: 110px;
+  }
+}
+
+.cartItemGroup {
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  border-radius: 22px;
+  background-color: white;
+}
+
+.cartPrimarySplitter {
+  width: 100%;
+  height: 2px;
+  background-color: #c9c9c9;
+}
+
+.cartItemHeaderTitle {
+  color: #c9c9c9;
+  font-family: var(--font-abhaya-libre), sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.CPIbody {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 9px;
+  background-color: #f3f3f3;
+  margin-bottom: 10px;
+}
+
+.PCIimage {
+  width: 95px;
+  height: 95px;
+  border-radius: 5px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.cartTotalTable {
+  width: 100%;
+}
+
+.cartTotalTable td {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cartTotalTable tr {
+  gap: 10px;
+}
+
+.cartTableItemLeft {
+  width: 120px;
+}
+
+.cartTabletread {
+  padding: 5px;
+}
+
+.cartBottomButtonGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartFinalButton {
+  border-radius: 50px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,145 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  customer
+  contentManager
+  admin
+}
+
+model User {
+  id                    String   @id @default(uuid())
+  name                  String?
+  email                 String?  @unique
+  image                 String?
+  emailVerified         DateTime?
+  role                  Role     @default(customer)
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+  phone_number          String?
+  subscribed_newsletter Boolean  @default(false)
+  coupon_claimed        Boolean  @default(false)
+  password              String?   
+
+  // Relations
+  accounts              Account[]
+  sessions              Session[]
+  reviews               Review[]
+  addresses             Address[]
+}
+
+
+model Account {
+  id                 String   @id @default(cuid())
+  userId             String   @map("user_id")
+  type               String
+  provider           String
+  providerAccountId  String   @map("provider_account_id")
+  refresh_token      String?  @db.Text
+  access_token       String?  @db.Text
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String?  @db.Text
+  session_state      String?
+
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@map("accounts")
+}
+
+model Session {
+  id           String    @id @default(cuid())
+  sessionToken String    @unique @map("session_token")
+  userId       String    @map("user_id")
+  expires      DateTime
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}
+
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+
+  @@unique([identifier, token])
+  @@map("verification_tokens")
+}
+
+model Product {
+  product_id      String      @id @default(uuid())
+  name            String
+  sku             String      @unique
+  description     String?
+  SEOtags         String?
+  directions      String?
+  ingredients     String?
+  precautions     String?
+  price           Decimal     @default(0.00)
+  tax_rate        Decimal     @default(0.00)
+  stock_quantity  Int         @default(0)
+  is_active       Boolean     @default(true)
+  image_url       String?
+  category_ids    String[]
+  created_at      DateTime    @default(now())
+  updated_at      DateTime    @updatedAt
+
+  reviews         Review[]
+}
+
+model Review {
+  review_id             String     @id @default(uuid())
+  rating                Int        @db.SmallInt
+  comment               String?
+  review_title          String?
+  is_verified_purchase  Boolean    @default(false)
+  created_at            DateTime   @default(now())
+
+  user                  User       @relation(fields: [user_id], references: [id])
+  user_id               String
+  product               Product    @relation(fields: [product_id], references: [product_id])
+  product_id            String
+}
+
+model Category {
+  category_id         String      @id @default(uuid())
+  name                String
+  description         String?
+  parent_category_id  String?
+  created_at          DateTime    @default(now())
+
+  parent_category     Category?   @relation("CategoryToCategory", fields: [parent_category_id], references: [category_id])
+  subcategories       Category[]  @relation("CategoryToCategory")
+}
+
+model Address {
+  address_id             String   @id @default(uuid())
+  user_id                String
+  street_address1        String
+  street_address2        String?
+  suburb                 String
+  city                   String
+  province               String
+  postal_code            String
+  country                String?  @default("South Africa") // Default South Africa
+  building_type          String?
+  delivery_instructions  String? 
+  created_at             DateTime @default(now())
+  updated_at             DateTime @updatedAt
+
+  user User @relation(fields: [user_id], references: [id])
+  
+  @@unique([user_id]) // `user_id` should only have one address
+}
+
+

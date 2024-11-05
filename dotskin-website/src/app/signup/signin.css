@@ -1,0 +1,126 @@
+/* // Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .signInImageContainer {
+    width: 0%;
+    height: 0vh;
+    display: none;
+  }
+
+  .signInFormContainerWrapper {
+    margin-top: 190px;
+  }
+
+  .SIlogoTopOverlay {
+    width: 100%;
+    height: 120px;
+    background-color: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0) 0%,
+      #b4d498 100%
+    );
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .signInImageContainer {
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    display: block;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .signInImageContainer {
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    display: block;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 993px) {
+  .signInImageContainer {
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    display: block;
+  }
+}
+
+.SIlogoTopContainer {
+  width: 102px;
+  height: 98px;
+  margin-top: 20px;
+  margin-left: 20px;
+  position: fixed;
+}
+
+.SIlogoTop {
+  width: 102px;
+  height: 98px;
+  background-image: url("../../app/assets/navLogo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signInTopGroup {
+  margin-bottom: 50px;
+}
+
+.signInTopGroup h3 {
+  color: #000;
+  font-family: var(--font-abhaya-libre), sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.signInTopGroup h5 {
+  color: #000;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.signInFormContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.signInFormContainerWrapper {
+  max-width: 330px;
+}
+
+.signInFormItem {
+  margin-bottom: 15px;
+}
+
+.SignInBottomGroup h5 {
+  text-align: center;
+  margin: 40px;
+}
+
+.signInImage {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../app/assets/female1.png");
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.SignInBottomGroup {
+  width: 100%;
+  display: block;
+}

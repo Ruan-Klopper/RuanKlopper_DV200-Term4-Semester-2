@@ -1,0 +1,48 @@
+/* font-family: var(--font-abhaya-libre), sans-serif; */
+/* font-family: var(--font-inter), sans-serif; */
+
+/* Ensure the admin content has enough space for the fixed navbar */
+.adminWebContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #e7e7e7;
+  padding-top: 56px; /* Height of the fixed navbar */
+}
+
+.adminContent {
+  width: 100%;
+  height: calc(100vh - 56px); /* Deduct the height of the navbar */
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Adjust Bootstrap Navbar */
+.navbar {
+  background-color: #cdcdcd; /* Dark background for navbar */
+}
+
+.nav-link {
+  color: #000000 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-toggler-icon {
+  filter: invert(
+    100%
+  ); /* Ensures the navbar toggler is visible on dark background */
+}
+
+.testABlock {
+  width: 100%;
+  height: auto;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 60px;
+}

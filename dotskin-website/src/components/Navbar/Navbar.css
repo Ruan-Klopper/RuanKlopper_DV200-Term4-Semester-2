@@ -1,0 +1,265 @@
+.NavbarBody {
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+}
+
+.DesktopNavContainer {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(13.75px);
+  position: relative;
+  z-index: 60;
+}
+
+.dNavLogo {
+  width: 100px;
+  height: 100px;
+  background-image: url("../../app/assets/navLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.dNavLinks {
+  width: 550px;
+  margin: 0 auto;
+  margin-top: -70px;
+  position: relative;
+  z-index: 70;
+}
+
+.navitem {
+  margin: 10px;
+  color: #1f3a09;
+  font-family: "DM Serif Text";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.navDot {
+  width: 5px;
+  height: 5px;
+  background-color: #1f3a09;
+  border-radius: 10px;
+}
+
+.dNavItems {
+  display: flex;
+  align-items: center;
+}
+
+.NavLeftBtn {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background-color: #d0e3bf;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7px;
+
+  /* Transition for smooth hover effects */
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.NavLeftBtn:hover {
+  background-color: #dcf3c3; /* Slightly darker shade */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.navStatusIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background-color: #b4d498;
+  border-radius: 30px;
+  font-weight: bold;
+  top: -18px;
+  right: -20px;
+}
+
+.navCartIcon {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../app/assets/cartIcon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navBellIcon {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../app/assets/bellIcon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navUserProfile {
+  display: flex;
+  align-items: center;
+}
+
+.navUserProfileLeft {
+  width: 57px;
+  height: 57px;
+  border-radius: 50px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navLoginButton {
+  border-radius: 30px !important;
+}
+
+/* Mobile nav ----------- */
+.MobileNavContainer {
+  width: 96%;
+  height: 85px;
+  margin: 0 auto;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 53px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  backdrop-filter: blur(13.75px);
+  position: relative;
+  z-index: 70;
+}
+
+.mNavLogo {
+  width: 74px;
+  height: 74px;
+  background-image: url("../../app/assets/navLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+  margin-top: 4px;
+}
+
+.mNavRight {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.hamburgerMenuBtn {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background-color: #d0e3bf;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hamburger Menu Animation */
+.mHamburgerMenu {
+  width: 90%;
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: -30px;
+  position: relative;
+  z-index: 60;
+  border-radius: 0px 0px 30px 30px;
+  background: linear-gradient(0deg, #fff 0%, rgba(226, 235, 219, 0.71) 100%);
+  box-shadow: 0px 4px 12.8px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(13.75px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: height 0.5s ease-in-out; /* Smooth animation */
+}
+
+/* Active state for the hamburger menu */
+.mHamburgerMenu.active {
+  height: 280px;
+}
+
+.navActive {
+  text-decoration: underline;
+}
+
+ol,
+ul {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.mNavs {
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.mobileNavs {
+  width: 100%;
+}
+
+.mBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mNavItem {
+  text-align: center;
+}
+
+.mNotifyContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  position: fixed;
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.mNotifyContainer.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dNotifyContainer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-top: 60px;
+  padding-right: 52px;
+  position: fixed;
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.dNotifyContainer.open {
+  opacity: 1;
+  transform: translateY(0);
+}

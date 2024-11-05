@@ -1,0 +1,183 @@
+.dpcBody {
+  width: 240px;
+  height: 370px;
+  border-radius: 25px;
+  border: 2px solid #b4d498;
+  background: #fff;
+  overflow: hidden;
+}
+
+.dpcConent {
+  position: relative;
+  z-index: 30;
+}
+
+.dpcImage {
+  width: 240px;
+  height: 180px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dpcRatingGroup {
+  display: flex;
+  align-items: center;
+}
+
+.dpcRatingIcon {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../app/assets/starIcon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.dpcRating {
+  color: #2b4912;
+  font-family: var(--font-abhaya-libre), sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+}
+
+.dpcProductTitle {
+  color: #000;
+  font-family: var(--font-abhaya-libre), sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: 0.46px;
+}
+
+.dpcProductPrice {
+  color: #789261;
+  font-family: var(--font-abhaya-libre), sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+}
+
+.dpcContentContainer {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mpcBody {
+  width: 170px;
+  height: 250px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  border: var(--sds-size-stroke-border) solid #b4d498;
+  background: #fff;
+  overflow: hidden;
+}
+
+.mpcBGtext {
+  width: 180px;
+  height: 280px;
+  font-family: var(--font-abhaya-libre), sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39px; /* 81.25% */
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+  margin-left: -30px;
+  background: linear-gradient(121deg, #e0edd5 0%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: -280px;
+  opacity: 70%;
+  position: relative;
+  z-index: 20;
+}
+
+.mpcConent {
+  position: relative;
+  z-index: 30;
+}
+
+.mpcImage {
+  width: 170px;
+  height: 119px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mpcRatingGroup {
+  display: flex;
+  align-items: center;
+}
+
+.mpcRatingIcon {
+  width: 15px;
+  height: 15px;
+  background-image: url("../../app/assets/starIcon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.mpcRating {
+  color: #2b4912;
+  font-family: var(--font-abhaya-libre), sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+}
+
+.mpcProductTitle {
+  color: #000;
+  font-family: var(--font-abhaya-libre), sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 22px; /* 116.667% */
+  letter-spacing: 0.46px;
+}
+
+.mpcProductPrice {
+  color: #789261;
+  font-family: "Abhaya Libre ExtraBold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+}
+
+.mpcContentContainer {
+  width: 100%;
+  height: 113px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

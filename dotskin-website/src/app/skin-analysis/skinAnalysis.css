@@ -1,0 +1,44 @@
+/* Container Styling */
+.skinAnalysisContent {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header Styling */
+.skinAnalysisHeader {
+  font-family: var(--font-abhaya-libre), sans-serif;
+  color: #d4e8c3;
+  margin-bottom: 20px;
+}
+
+/* Lead Text Styling */
+.skinAnalysisLead {
+  font-family: var(--font-inter), sans-serif;
+  color: #333;
+  font-size: 18px;
+}
+
+/* Form Styling */
+.analysisSubmitButton {
+  background-color: #406c19;
+  border: none;
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Accordion Styling */
+.accordion-button {
+  font-family: var(--font-abhaya-libre), sans-serif;
+  color: #333;
+}
+
+.accordion-body {
+  font-family: var(--font-inter), sans-serif;
+  color: #333;
+}
+
+/* General Styling */
+.clientWebsiteContainer {
+  background-color: #fff;
+}

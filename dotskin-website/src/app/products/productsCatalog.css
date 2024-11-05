@@ -1,0 +1,89 @@
+/* app/products/productsCatalog.css */
+
+/* Remove all previous CSS in productsCatalog.css */
+
+/* New CSS code */
+
+@media screen and (min-width: 1151px) {
+  .clientWebsiteContent {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1150px) {
+  .clientWebsiteContent {
+    padding-top: 100px;
+  }
+}
+
+/* Small devices (sm) - screens ≤ 576px */
+@media (max-width: 576px) {
+  .PCVfiltersTG {
+    display: block;
+  }
+}
+
+/* Medium devices (md) - screens ≥ 577px and ≤ 768px */
+@media (min-width: 577px) and (max-width: 767px) {
+  .PCVfiltersTG {
+    display: none;
+  }
+}
+
+/* Larger devices (lg) - screens ≥ 768px and ≤ 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .PCVfiltersTG {
+    display: none;
+  }
+}
+
+/* Extra large devices (xl) - screens ≥ 992px */
+@media (min-width: 992px) {
+  .PCVfiltersTG {
+    display: none;
+  }
+}
+
+.sideBarContent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-top: 100px;
+}
+
+.sideBarContent h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.offcanvas {
+  width: 280px !important;
+}
+
+.PCVfiltersTG h5 {
+  color: black;
+  font-weight: bold;
+}
+
+.PCVfiltersBtn {
+  border-radius: 30px;
+}
+
+@media (max-width: 576px) {
+  .product-card {
+    margin-bottom: 1rem;
+  }
+}
+
+.PCLproductsContainer {
+  max-width: 1100px;
+}
+
+.PCVsplitter {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}

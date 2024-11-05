@@ -1,0 +1,222 @@
+/* Home.css */
+
+/* Home Product Card */
+
+@media screen and (min-width: 1151px) {
+  .homepage {
+    padding-top: 120px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1150px) {
+  .homepage {
+    padding-top: 110px;
+  }
+}
+
+.hcCardBody {
+  width: 290px;
+  height: 350px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.homeContainer {
+  max-width: 1550px;
+}
+
+.hrcBGtext {
+  width: 315px;
+  height: 350px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Abhaya Libre ExtraBold";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  margin-top: -10px;
+  margin-left: -10px;
+  opacity: 80%;
+  line-height: 60px; /* 82.292% */
+  overflow-wrap: break-word;
+  position: relative;
+  z-index: 5;
+}
+
+.hrcImageWrapper {
+  width: 290px;
+  height: 350px;
+  margin-top: -350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.hrcImage {
+  width: 290px;
+  height: 290px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.homeRangeWrapper {
+  width: 100%;
+}
+
+.HomeRangeContainer {
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.HomeRangeContainerInside {
+  width: 1550px;
+  border-radius: 25px;
+  position: relative;
+  z-index: 5;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 851px) {
+  .HSAcontent {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .HSAleft {
+    width: 70%;
+    height: 600px;
+  }
+
+  .HSAoverlay {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .HSAright {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 80px;
+  }
+
+  .HSAinfo h1 {
+    text-align: right;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.46px;
+  }
+
+  .HSAinfo h5 {
+    text-align: right;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 108.333% */
+    letter-spacing: 0.46px;
+  }
+
+  .HSAinfo {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 850px) {
+  .HSAcontent {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    /* justify-content: space-between; */
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .HSAleft {
+    width: 100%;
+    height: 270px;
+  }
+
+  .HSAoverlay {
+    width: 100%;
+    height: 270px;
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 50%);
+  }
+
+  .HSAright {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .HSAinfo h1 {
+    text-align: left;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .HSAinfo h5 {
+    text-align: left;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 108.333% */
+    letter-spacing: 0.46px;
+  }
+
+  .HSAinfo {
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+}
+
+.homeSkinAnalysisGroup {
+  width: 100%;
+  height: 600px;
+  border-radius: 34px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.HSAcontent {
+  width: 100%;
+  border-radius: 35px;
+  background-color: white;
+}
+
+.HSAleft {
+  background-image: url("../app/assets/female2.png");
+  background-size: cover;
+}
+
+.HSAinfo {
+  text-align: end;
+}
+
+.HSAinfo h1 {
+  color: #000;
+  font-family: var(--font-abhaya-libre), sans-serif;
+}
+
+.HSAinfo h5 {
+  color: #000;
+  font-family: var(--font-inter), sans-serif;
+}

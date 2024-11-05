@@ -1,0 +1,78 @@
+.NotificationBody {
+  width: 360px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(243, 243, 243, 0.8);
+  box-shadow: 0px 4px 13.4px 0px rgba(0, 0, 0, 0.57);
+  backdrop-filter: blur(10px);
+
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.NotificationBody.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.NotificationBody h4 {
+  color: #000;
+  font-family: "Abhaya Libre ExtraBold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.notifyBody {
+  padding: 12px;
+  border-radius: 16px;
+  background: #ffffff;
+  font-family: var(--font-inter), sans-serif;
+}
+
+.notifyTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notifyTitle {
+  color: #949494;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.notifyContent {
+  color: #949494;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: var(--font-inter), sans-serif;
+}
+
+.notifyDismiss {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../app/assets/notifySeccClose.png");
+}
+
+.closeNotifications {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../app/assets/notifyPrimaryClose.png");
+}
+
+.notifyDeliveryIcon {
+  width: 16px;
+  height: 16px;
+  background-image: url("../../app/assets/notifyShipment.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

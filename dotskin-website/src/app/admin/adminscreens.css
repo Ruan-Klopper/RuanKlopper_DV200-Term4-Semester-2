@@ -1,0 +1,183 @@
+/* font-family: var(--font-abhaya-libre), sans-serif; */
+/* font-family: var(--font-inter), sans-serif; */
+/* Navbar Custom Styles */
+.navbar-custom {
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  margin-right: 15px;
+  font-size: 1.1rem;
+  padding: 10px 0;
+}
+
+.navbar-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-user-info .btn {
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments for the navbar on mobile */
+@media (max-width: 767.98px) {
+  .navbar-custom .navbar-collapse {
+    background-color: #f8f9fa;
+    padding: 10px !important;
+  }
+
+  .navbar-custom .navbar-nav .nav-link {
+    padding: 2px;
+    font-size: 1.1rem;
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .navbar-user-info {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .navbar-user-info .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-user-info .me-3 {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Desktop specific spacing */
+@media (min-width: 768px) {
+  .navbar-user-info {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar-user-info .btn {
+    width: auto !important;
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+
+  /* Adjust card and table padding for desktop */
+  .blocky-elements .card {
+    padding: 0.75rem; /* Reduce padding for desktop */
+  }
+
+  /* Limit the max width of blocky elements and center-align */
+  .blocky-elements {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Adjust table width and make it responsive */
+  .table-responsive {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  /* Navbar Padding for Desktop */
+  .navbar-custom {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.CMSHeaderControlGroup {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sticky-modal-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1055;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.admin-dashboard h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.admin-dashboard .card {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard .card .display-4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.CMSHeaderControlGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ASNspliiter {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.login-card {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.login-card .form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.login-card .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+.login-card .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.forgot-password-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.CMSHeaderControls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.CMSHeaderControlContainer {
+  margin: 10px;
+}

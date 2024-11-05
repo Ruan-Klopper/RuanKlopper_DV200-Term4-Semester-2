@@ -1,0 +1,143 @@
+/*   font-family: var(--font-abhaya-libre), sans-serif; */
+/* font-family: var(--font-inter), sans-serif; */
+
+.dHHbody {
+  width: 100%;
+  height: 600px;
+  border-radius: 45px;
+  background: #b4d498;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.dHHContent {
+  width: 550px;
+  padding-top: 70px;
+  padding-left: 70px;
+}
+
+.dHHContent h1 {
+  color: #fff;
+  font-family: "Abhaya Libre ExtraBold";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 62px; /* 82.292% */
+  margin-bottom: 30px;
+}
+
+.dHHContent h5 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.dHHimage {
+  width: 60%;
+  height: 600px;
+  background-image: url("../../app/assets/female1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.dHHimageOverlay {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(90deg, #b4d498 0%, rgba(234, 234, 234, 0) 100%);
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-bottom: 55px;
+}
+
+.dHHproductCarousel {
+  width: 550px;
+  margin-right: -230px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* Mobile Home Header */
+.mHHbodySl1 {
+  width: 100%;
+  height: 535px;
+  border-radius: 35px;
+  background: linear-gradient(0deg, #ddefce 0%, #b4d498 100%), #fff;
+}
+
+.mHHContentSl1 {
+  height: 535px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mHHContentSl1 h1 {
+  color: #fff;
+  font-family: var(--font-abhaya-libre), sans-serif;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 42px; /* 83.333% */
+  margin-bottom: 20px;
+}
+
+.mHHContentSl1 h5 {
+  color: #fff;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Slide 2 */
+.mHHbodySl2 {
+  width: 100%;
+  height: 535px;
+  overflow: hidden;
+  border-radius: 35px;
+}
+
+.mHHimageBody {
+  width: 100%;
+  height: 535px;
+  border-radius: 35px;
+  overflow: hidden;
+  background-image: url("../../app/assets/female1.png");
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.mHHproductWrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.mHHproductContainer {
+  width: 530px;
+  height: 250px;
+}
+
+.testProductItem {
+  width: 170px;
+  height: 250px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: var(--sds-size-stroke-border) solid #b4d498;
+  background: #fff;
+}

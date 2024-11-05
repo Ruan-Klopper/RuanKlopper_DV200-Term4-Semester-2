@@ -1,0 +1,99 @@
+/* font-family: var(--font-abhaya-libre), sans-serif; */
+/* font-family: var(--font-inter), sans-serif; */
+
+@media screen and (min-width: 1151px) {
+  .cartPage {
+    padding-top: 150px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1150px) {
+  .cartPage {
+    padding-top: 110px;
+  }
+}
+
+.cartItemGroup {
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  border-radius: 22px;
+  background-color: white;
+}
+
+.cartItemHeaderTitle {
+  color: #c9c9c9;
+  font-family: var(--font-abhaya-libre), sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.cartPrimarySplitter {
+  width: 100%;
+  height: 2px;
+  background-color: #c9c9c9;
+}
+
+.cartTotalTable {
+  width: 100%;
+}
+
+.cartTotalTable td {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cartTotalTable tr {
+  gap: 10px;
+}
+
+.cartTableItemLeft {
+  width: 120px;
+}
+
+.cartTabletread {
+  padding: 5px;
+}
+
+.cartBottomButtonGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartFinalButton {
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+
+.checkoutDeliveryCard {
+  border: 2px dashed #d2d2d2;
+}
+
+.checkoutFormGroup {
+  margin-bottom: 10px;
+}
+
+/* Table */
+.cartTotalTable {
+  width: 100%;
+}
+
+.tableRow {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.tableCol.label {
+  width: 40%;
+}
+
+.tableCol.value {
+  width: 60%;
+  font-weight: bold;
+}
