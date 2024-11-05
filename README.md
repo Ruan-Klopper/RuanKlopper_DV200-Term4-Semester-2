@@ -1,13 +1,14 @@
-<p align="center" style={width: "100%" padding: "20px" ,backgroundColor: "#ffffff"}>
+<p align="center" style="width: 90%; padding: 40px; background-color: #D4E8C3; border-radius: 30px">
   <img src="./dotskin-website/public/assets/logo.png" alt="DotSkin Header Image" width="200">
 </p>
-
-# DotSkin
-
-**Empowering Local Beauty Brands with a Seamless Shopping Experience**
+<div align="center" style="width: 99%; padding: 10px; background-color: #D4E8C3; border-radius: 30px; color: #2B4912;">
+  <h2 style="font-size: 36px; margin-bottom: -20px;">.DotSkin</h2>
+  <h5>Empowering Local Beauty Brands with a Seamless Shopping Experience</h5>
+</div>
 
 ## Table of Contents
 
+- [Links](#links)
 - [Project Overview](#project-overview)
 - [Project Type](#project-type)
 - [Tech Stack](#tech-stack)
@@ -15,7 +16,6 @@
 - [Database](#database)
 - [Website Guide](#website-guide)
 - [Open Brief Proposal](#open-brief-proposal)
-- [Links](#links)
 - [Installation & Setup](#installation--setup)
 - [Deployment](#deployment)
 - [Conclusion](#conclusion)
